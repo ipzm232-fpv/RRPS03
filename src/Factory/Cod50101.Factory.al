@@ -1,7 +1,7 @@
 codeunit 50101 Factory
 {
 
-    procedure CreateProduct(Type: Option Option1,Option2,Option3): Boolean
+    procedure CreateProduct(Type: Option Unknown,Option1,Option2,Option3): Boolean
     var
         Product1: Codeunit Product1;
         Product2: Codeunit Product2;
