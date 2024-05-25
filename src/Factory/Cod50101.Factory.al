@@ -1,13 +1,12 @@
 codeunit 50101 Factory
 {
-    var
-        Type: Option Option1,Option2,Option3;
 
-    procedure CreateProduct(var Product: Interface IProduct): Boolean
+    procedure CreateProduct(Type: Option Option1,Option2,Option3): Boolean
     var
         Product1: Codeunit Product1;
         Product2: Codeunit Product2;
         Product3: Codeunit Product3;
+        Product: Interface IProduct;
     begin
         case Type of
             Type::Option1:
@@ -19,7 +18,7 @@ codeunit 50101 Factory
             else
                 exit(false);
         end;
-
+        Product.Use();
         exit(true);
     end;
 }

@@ -45,7 +45,7 @@ page 50100 Setup
                     Choice: Integer;
                 begin
                     Choice := StrMenu('Product1,Product2,Product3', 0, 'Choose Product Type');
-                    Consumer.ConsumeProduct(Enum::"Product Type".FromInteger(Choice));
+                    Consumer.ConsumeProduct(Choice);
                 end;
             }
             action(CheckProductAbstractFabric)
